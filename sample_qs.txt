@@ -1,0 +1,3 @@
+Does AppResponse monitoring interface support jumbo frames?
+What is the correct BPF filter to use for capturng VLAN-tagged packets for 10.1.1.0/24?
+If a HTTP request has multiple XFF headers, which one would AppResponse pick as the originating IP address?
