@@ -63,7 +63,6 @@ def scrape_kbs():
             'created_at': date_modify,
         }
         docs += create_documents_from_text(kb_doc,metadata)
-        print(docs[-1])
 
     print(f'Split done! Total docs => {len(docs)}')
     return docs
@@ -147,5 +146,7 @@ with open('sample_qs.txt') as qfile:
         kg_qa_resp_time = timeit.default_timer() - start # seconds
         print(f'Query: {query}\nResponse: {response.response}\nTime: {kg_qa_resp_time:.2f}\n{"="*80}')
         # display all sources used by query engine
+        '''
         for j,src in enumerate(response.source_nodes):
             print(f'Context: ### source {j} ###:\n{src.node.text}\nMetadata: {src.node.metadata}')
+        '''
