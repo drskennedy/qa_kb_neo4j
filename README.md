@@ -14,10 +14,11 @@ After injesting 75 knowledge-base articles, the resulting knowledge graphs looke
 <br><br>
 ![Knowledge Graph](/assets/graphs.png)
 <br><br>
-Neo4j cypher allows us to query the database to understand how a specific context gets picked for a query. To find out the 1-hop nodes from entity "Scheduled report", for example, we could query using `MATCH (a)-[r]-(b) WHERE a.name =~ 'Scheduled report.*' RETURN r, a, b`. The following shows the returned graph:
+Neo4j cypher allows to query the database to understand how a specific context gets picked for a query. To find out the 1-hop nodes from entity "Scheduled report", for example, we could query using `MATCH (a)-[r]-(b) WHERE a.name =~ 'Scheduled report.*' RETURN r, a, b`. The following shows the returned graph:
 <br><br>
 ![1-hop nodes](/assets/1-hop.png)
-Checked the linked Medium article for additional examples.
+<br><br>
+Check the linked Medium article for additional examples.
 ___
 ## How to Setup Python Virtual Environment to Support this QA system
 - Create and activate the environment:
